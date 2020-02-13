@@ -16,8 +16,11 @@ def long_planeteer_calls(arr)# code an argument here
 return  arr.filter{|elem| elem.length > 4}.length >=1
 end 
 
-def find_the_cheese(arr)# code an argument here
-  # the array below is here to help
+
+def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+    arr.find do |type|
+    cheese_types.include?(type)
+  end 
+end
 end
