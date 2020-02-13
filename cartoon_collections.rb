@@ -8,7 +8,7 @@ end
 
 def summon_captain_planet(arr)# code an argument here
   # Your code her
-  return arr.map{|elem| elem}
+  return arr.map{|elem| elem.capitalize+"!"}
 end
 
 def long_planeteer_calls# code an argument here
