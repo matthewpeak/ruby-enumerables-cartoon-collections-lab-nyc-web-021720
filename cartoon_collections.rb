@@ -11,16 +11,10 @@ def summon_captain_planet(arr)# code an argument here
   return arr.map{|elem| elem.capitalize+"!"}
 end
 
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls(arr)# code an argument here
   # Your code here
-   i = 0 
-  while i < arr.length 
-    if arr[i].length > 4
-      return True
-    else
-     i += 1 
-  end 
-end
+return  arr.filter{|elem| elem.length > 4}.length >=1
+end 
 
 def find_the_cheese# code an argument here
   # the array below is here to help
